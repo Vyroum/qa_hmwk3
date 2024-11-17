@@ -1,7 +1,7 @@
 import pytest
 from selene import browser
 
-@pytest.fixture(scope="session")
+@pytest.fixture
 def browser_set():
     browser.open("https://google.com/")
     browser.driver.maximize_window()

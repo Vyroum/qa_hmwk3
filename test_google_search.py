@@ -5,7 +5,7 @@ from selene import browser, be, have
 def test_search_for_result(browser_set):
     browser.element('[name="q"').should(be.blank).type("Pytest").press_enter()
     browser.element('[id="search"]').should(have.text("pytest documentation"))
-    browser.open("https://google.com/")
+
 
 
 def test_search_for_no_result(browser_set):
